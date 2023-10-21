@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(255, 174, 0);
+            }
+            button{
+                background-color:  rgb(255, 174, 0); 
+                color: red;
+            }
+        </style>
+
+        <script>
+            function saludo() {
+                var nombre = document.getElementsByName("txt_nombre")[0].value
+                alert("mucho gusto")
+            }
+        </script>
+        
+    </head>
+    <body>
+         
+         
+         <input type="text" name="txt_nombre" placeholder="pon (hola mi nombre es *****)">
+
+        <button onclick="saludo()">mensaje</button>
+    </body>
+</html>

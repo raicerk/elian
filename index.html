@@ -1,28 +1,52 @@
 <html>
-    <head>
-        <style>
-            body {
-                background-color: rgb(255, 174, 0);
-            }
-            button{
-                background-color:  rgb(255, 174, 0); 
-                color: red;
-            }
-        </style>
 
-        <script>
-            function saludo() {
-                var nombre = document.getElementsByName("txt_nombre")[0].value
-                alert("mucho gusto")
-            }
-        </script>
-        
-    </head>
-    <body>
-         
-         
-         <input type="text" name="txt_nombre" placeholder="pon (hola mi nombre es *****)">
+<head>
+    <style>
+        body {
+            background-color: rgb(255, 174, 0);
+        }
 
-        <button onclick="saludo()">mensaje</button>
-    </body>
+        button {
+            background-color: rgb(255, 174, 0);
+            color: red;
+        }
+    </style>
+
+    <script>
+        function saludo() {
+            var contiene_mensaje = document.getElementsByName("txt_nombre")[0].value
+            alert("mucho gusto")
+        }
+
+        function sumar() {
+            var numero1 = parseInt(document.getElementsByName("text")[0].value)  
+            var numero2 = parseInt(document.getElementsByName("text_name")[0].value)
+            alert(numero1 + numero2)
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" name="txt_nombre" placeholder="pon (hola mi nombre es *****)">
+
+    <button onclick="saludo()">mensaje</button>
+
+
+    <br><br><br>
+    SUMADORA
+    <br><br><br>
+
+
+    <input type="text" name="text" placeholder="100">
+    <input type="text" name="text_name" placeholder="100">
+
+    <button onclick="sumar()">Sumar</button>
+
+
+
+</body>
+
 </html>
